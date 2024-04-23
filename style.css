@@ -1,0 +1,1229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* h1 {
+    color: black;
+    font-family: "Teko", sans-serif;
+}
+
+* p {
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+* a {
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Header */
+#blockPhoneHeader {
+    display: none;
+}
+ 
+#PhoneHeaderLogo {
+    display: none;
+}
+ 
+#Hamburgurimg {
+    display: none;
+}
+ 
+.navigationFlex {
+    display: flex;
+    align-items: top;
+
+    padding-left: 10%;
+    margin-top: 2%;
+    gap: 60px;
+ 
+    font-size: 3.125em;
+}
+ 
+.navigationFlex>article {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.navigationFlex>article>a, .navigationFlex>article>p {
+    color: rgb(230, 221, 221);
+    text-decoration: none;
+    transition: 100ms;
+}
+ 
+.headerFlex {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+}
+ 
+.headerUnderline {
+    transition: 250ms;
+}
+ 
+#snelleHapAlt {
+    width: 50%;
+    height: 100%;
+}
+ 
+#corners {
+    border-radius: 25px;
+    border: 5px solid #c2c4bf;
+    background-color: rgb(112, 110, 110);
+ 
+    width: 95%;
+    height: 125px;
+    position: absolute;
+    margin: 5vh;
+    z-index: 2;
+}
+ 
+#reserverenBlok {
+    background-color: rgb(79, 74, 74);
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    height: 5vh;
+    width: 20vh;
+    z-index: 3;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding-top: 1vh;
+}
+ 
+#reserverenBlok > a {
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 4vh;
+}
+
+  
+.dropdown .dropbtn {
+    z-index: 5;
+    cursor: pointer;
+    font-size: 3.125rem;  
+    border: none;
+    color: rgb(230, 221, 221);
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(79, 74, 74);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 6;
+    margin-right: 5%;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #a8a8a8;
+}
+
+.show {
+    display: block;
+}
+
+/* Home CSS */
+.bgVideo {
+    filter: grayscale(100%);
+    z-index: 0;
+}
+ 
+.triangleRight {
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 500vh solid transparent;
+    border-bottom: 50vh solid rgb(112, 110, 110);
+    position: absolute;
+    margin: -47vh;
+}
+ 
+.triangleLeft {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 500vh solid rgb(112, 110, 110);
+    border-bottom: 30vh solid transparent;
+    position: absolute;
+}
+ 
+.homeTextFlex1 {
+    background-color: rgb(112, 110, 110);
+    z-index: 2;
+    display: grid;
+    align-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+ 
+.homeTextFlex1>h1 {
+    text-align: center;
+}
+ 
+.homeTextFlex2 {
+    background-color: rgb(112, 110, 110);
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+ 
+.homeTextFlex2>p {
+    border: 2px;
+    z-index: 2;
+    inline-size: 60vh;
+    align-content: center;
+}
+ 
+#slideHomepageH1 {
+    z-index: 2;
+    margin-left: 35%;
+    padding-top: 5%;
+    position: absolute;
+    font-size: 50px;
+}
+ 
+.backgroundSlideShow {
+    background-color: rgb(125, 118, 118);
+    width: auto;
+    height: 150vh;
+}
+ 
+.slideShowFlex {
+    display: grid;
+    align-content: center;
+    flex-direction: column;
+}
+ 
+.slideHomepage {
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+}
+ 
+.slideHomepage>img {
+    width: 75%;
+    height: 75%;
+}
+ 
+#Back {
+    position: absolute;
+    font-size: 10vh;
+    color: white;
+    width: 10vh;
+    height: 25vh;
+ 
+    border-radius: 25px;
+    border: 2.5px solid #ffffff;
+    background-color: rgb(112, 110, 110);
+ 
+    margin-top: 60vh;
+    margin-left: 20vh;
+ 
+    transition: 100ms;
+}
+ 
+#Forward {
+    position: absolute;
+    font-size: 10vh;
+    color: white;
+    width: 10vh;
+    height: 25vh;
+ 
+    border-radius: 25px;
+    border: 2.5px solid #ffffff;
+    background-color: rgb(112, 110, 110);
+ 
+    margin-top: 60vh;
+    margin-left: 195vh;
+ 
+    transition: 100ms;
+}
+ 
+ 
+#homeTextH1 {
+    background-color: rgb(69, 65, 65);
+    opacity: 0.5;
+    text-align: center;
+}
+ 
+#snelleHapLogo {
+    margin-top: 20vh;
+    margin-left: 25vh;
+    position: absolute;
+    mix-blend-mode: difference;
+    z-index: 2;
+    width: 75%;
+    height: 75%;
+}
+
+.galleryFlex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: rgb(125, 118, 118);
+}
+ 
+.galleryFlex>article>p {
+    text-align: center;
+    font-size: 5vh;
+    inline-size: 100vh;
+}
+ 
+.galleryFlex>article>img {
+    height: 60vh;
+    width: 100vh;
+}
+ 
+#triangleGalleryLeft {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 500vh solid rgb(112, 110, 110);
+    border-bottom: 30vh solid transparent;
+    position: absolute;
+}
+
+/* menu css */
+.menumain {
+    justify-content: space-evenly;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: rgb(125, 118, 118);
+    height: 100vh;
+}
+
+.navgerechten {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    font-size: 150%;
+    z-index: 3;
+}
+
+.navgerechten2 {
+    display: flex;
+    text-align: center;
+    font-size: 150%;
+    z-index: 3;
+    justify-content: space-between;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.navgerechten2>p {
+    z-index: 3;
+}
+
+#menuForward {
+    position: absolute;
+    font-size: 10vh;
+    color: white;
+    width: 10vh;
+    height: 25vh;
+    border-radius: 25px;
+    border: 2.5px solid #ffffff;
+    background-color: rgb(112, 110, 110);
+    margin-top: 25vh;
+    margin-left: 197vh;
+    transition: 100ms;
+}
+
+#menuBack {
+    position: absolute;
+    font-size: 10vh;
+    color: white;
+    width: 10vh;
+    height: 25vh;
+    border-radius: 25px;
+    border: 2.5px solid #ffffff;
+    background-color: rgb(112, 110, 110);
+    margin-top: 25vh;
+    margin-left: 2vh;
+    transition: 100ms;
+}
+
+#menuline {
+    margin-top: 1%;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1%;
+}
+
+.menuFlex {
+    position: absolute;
+    display: flex;
+    height: 60%;
+    width: 217%;
+    background-color: rgb(125, 118, 118);
+    margin-top: 3.5%;
+    margin-left: 14vh;
+}
+
+.menuBlock {
+    background-color: rgb(112, 110, 110);
+    height: 60vh;
+    width: 80vh;
+    border: 2.5px solid white;
+    text-align: center;
+    transition: 300ms;
+}
+
+.menuBlock>p {
+    inline-size: 97%;
+    font-size: 2.8vh;
+}
+.menuBlock>h1 {
+    font-size: 3.4vh;
+}
+
+#imgmenu {
+    margin-top: 10px;
+    height: 40%;
+    width: 100%;
+}
+
+#Gekoeld {
+    z-index: 1;
+}
+/* aboutus */
+.fontSizeAbout {
+    font-size: 30px;
+}
+
+.aboutflex {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 5vh;
+    width: 100%;
+}
+
+.aboutflex2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 5vh;
+    width: 100%;
+}
+
+#textabout1 {
+    padding-left: 5vh;
+}
+
+#textabout2 {
+    padding-right: 8vh;
+    padding-left: 2vh;
+}
+
+#aboutvid1 {
+    height: auto;
+    width: 98%;
+}
+
+#aboutimg {
+    height: auto;
+    width: 94%;
+}
+
+.aboutusmain {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: rgb(125, 118, 118);
+    height: 120vh;
+}
+
+/* resrvation */
+#allreserveren {
+    background-color: rgb(125, 118, 118);
+    height: 175vh;
+}
+
+.reserveren {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+
+.reserverenall {
+    margin-left: 20%;
+}
+
+.flexreserveren {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 3vh;
+}
+
+#TraingleReserveren {
+    display: none;
+}
+
+#corners {
+    background-color: none;
+}
+
+/* result */
+.result {
+    padding-top: 25vh;
+    height: 125vh;
+    background-color: #7d7575;
+}
+
+.resultbox {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.imagesresult {
+    width: 100%;
+    margin-right: 2%;
+}
+
+.imageresult2 {
+    width: 100%;
+}
+
+#flexresult {
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+}
+/* reviews page */
+.reviewsFlex2, .reviewsFlex1, .reviewsFlex3 {
+    display: flex;
+    flex-direction: row;
+    margin: 16vh;
+    margin-left: 10vh;
+    height: 15vh;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.titleReview {
+    text-align: center;
+    font-size: 300%;
+}
+
+.borderReview {
+    border: black 2px solid;
+    width: 50%;
+}
+
+.reviewsAll {
+    padding-top: 25vh;
+    height: 138vh;
+    background-color: #7d7575;
+}
+
+/* vacatures */
+.vacatures {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.vacatures > section {
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    background-color: rgb(84, 84, 84);
+}
+ 
+.vacatures > section > img {
+    margin: auto;
+    width: 400px;
+    height: 250px;
+}
+ 
+.vacatures > section > p {
+    text-align: center;
+    font-size: 5vh;
+}
+ 
+.mainVacatures {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: grey;
+    height: 220vh;
+}
+ 
+.mainVacatures>h1 {
+    font-size: 15vh;
+    margin-top: 20vh;
+    text-align: center;
+}
+ 
+.mainVacatures>p {
+    font-size: 5vh;
+    text-align: center;
+}
+ 
+#vacaturesBlok {
+    background-color: rgb(51, 121, 43);
+    height: 10vh;
+    width: 50vh;
+    margin: auto;
+    z-index: 3;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+ 
+#vacaturesBlok > p {
+    text-decoration: none;
+    font-size: 3vh;
+    margin-left: 17vh;
+}
+
+/* Arrangementen */
+.mainArrangementen {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: grey;
+    height: 150vh;
+}
+ 
+.mainArrangementen > h1 {
+    font-size: 10vh;
+    margin-top: 10vh;
+}
+ 
+.arrangementen {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+.arrangementen > img {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+ 
+.arrangementen > p {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Footer */
+#footerFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(112, 110, 110);
+    width: auto;
+    height: 150%;
+}
+ 
+.socialsFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.socialImg {
+    padding-top: 50px;
+    height: 10vh;
+    width: 10vh;
+    z-index: 2;
+}
+ 
+.footerInfo>h1 {
+    font-size: 5vh;
+    text-align: center;
+}
+ 
+.footerInfo>p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+/* Ipad css code */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    /* vacatures */
+    /* Vacatures */
+    .vacatures {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+ 
+    .mainVacatures {
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+        background-color: grey;
+        height: 270vh;
+    }
+ 
+    .vacatures > section {
+        grid-gap: 50px;
+    }
+ 
+    #vacaturesBlok {
+        background-color: rgb(51, 121, 43);
+        height: 10vh;
+        width: 45vh;
+        margin: auto;
+        z-index: 3;
+        border: 2px solid white;
+        border-radius: 25px;
+    }
+   
+    #vacaturesBlok > p {
+        text-decoration: none;
+        font-size: 3vh;
+        margin-left: 16vh;
+       
+    }
+    /* Reserveren */
+    .reserverenall {
+        margin-left: 10%;
+    }
+
+    .result {
+        height: 100vh;
+    }
+
+    /* Header */
+    .headerFlex {
+        padding-top: 2.5vh;
+    }
+ 
+    .navigationFlex {
+        gap: 13px;
+        padding-left: 0%;
+        margin-left: 5%;
+    }    
+ 
+    #corners {
+        margin: 2.5vh;
+    }
+
+    #DropdownMenu {
+        right: -5vh;
+    }
+
+    /* reviews page */
+    .reviewsFlex1, .reviewsFlex2, .reviewsFlex3 {
+        margin-left: 7.5vh;
+    }
+
+    .reviewsAll {
+        height: 130vh;
+    }
+    /* Home page */
+    #snelleHapLogo {
+        margin-top: 20vh;
+        margin-left: 25vh;
+        position: absolute;
+        mix-blend-mode: difference;
+        z-index: 2;
+        width: 60%;
+        height: 40%;
+    }
+
+    #Back {
+        position: absolute;
+        font-size: 10vh;
+        color: white;
+        width: 10vh;
+        height: 25vh;
+        border-radius: 25px;
+        border: 2.5px solid #ffffff;
+        background-color: rgb(112, 110, 110);
+        margin-top: 70vh;
+        margin-left: 9vh;
+        transition: 100ms;
+    }
+
+    #Forward {
+        position: absolute;
+        font-size: 10vh;
+        color: white;
+        width: 10vh;
+        height: 25vh;
+        border-radius: 25px;
+        border: 2.5px solid #ffffff;
+        background-color: rgb(112, 110, 110);
+        margin-top: 70vh;
+        margin-left: 120vh;
+        transition: 100ms;
+    }
+
+    #slideHomepageH1 {
+        z-index: 2;
+        margin-left: 35%;
+        padding-top: 25%;
+        position: absolute;
+        font-size: 50px;
+    }
+
+    .slideHomepage {
+        margin-top: 40%;
+        margin-left: 20%;
+        position: absolute;
+    }
+
+    /* menu ipad css */
+    .menumain {
+        height: 55vh;
+    }
+
+    #menuForward {
+        margin-left: 88%;
+    }
+
+    .drankenBody {
+        height: 50vh;
+    }
+
+    .triangleRight {
+       display: none;
+    }
+    
+    .menuBlock {
+        width: 40vh;
+    }
+
+    /* about us ipad */
+    .aboutusmain {
+        height: 110vh;
+    }
+
+    #textabout2 {
+        padding: 0;
+    }
+
+    #aboutimg {
+        margin-left: 13%;
+    }
+
+    #aboutvid1 {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+/* Phone css code */
+@media screen and (max-width: 480px) {
+      /* arrangementen */
+      .arrangementen {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr
+    }
+    .mainArrangementen {
+        height: 100vh;
+    }
+    .arrangementen > p {
+        font-size: 2.5vh;
+    }
+    .mainArrangementen > h1 {
+        margin-top: 0vh;
+        font-size: 50px;
+    }
+    .arrangementen > img {
+        margin: auto;
+        width: 400px;
+        height: 250px;
+    }
+    /* vactures */
+     .vacatures {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .mainVacatures {
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+        background-color: grey;
+        height: 350vh;
+    }
+
+    .mainVacatures > h1 {
+        display: none;
+    }
+
+    .vacatures > section {
+        grid-gap: 50px;
+    }
+
+    #vacaturesBlok {
+        background-color: rgb(51, 121, 43);
+        height: 10vh;
+        width: 45vh;
+        margin: auto;
+        z-index: 3;
+        border: 2px solid white;
+        border-radius: 25px;
+    }
+   
+    #vacaturesBlok > p {
+        text-decoration: none;
+        font-size: 3vh;
+        margin-left: 16vh;
+       
+    }
+    /* reviews page*/
+    .reviewsFlex1, .reviewsFlex2, .reviewsFlex3 {
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .borderReview {
+        width: 100%;
+    }
+
+    .reviewsAll {
+        height: 227vh;
+        margin: 0;
+        padding-top: 5vh;
+    }
+    /* Reserveren Result */
+    .result {
+        padding-top: 0;
+        height: 190vh;
+        background-color: #7d7575;
+    }
+    
+    .resultbox {   
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 2fr, 1fr
+    }
+    
+    .imagesresult {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .imageresult2 {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #flexresult {
+        align-self: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Reserveren */
+    .reserverenall {
+        margin-left: 0%;
+    }
+
+    .reserverenall>h1 {
+        margin-left: 5%;
+    }
+
+    .reserveren {
+        display: flex;
+        flex-direction: column;
+        width: 40vh;
+        margin-left: 2vh;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 3vh;
+    }
+
+    #allreserveren {
+        background-color: rgb(125, 118, 118);
+        height: 200vh;
+    }
+
+    .flexreserveren {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* do not touch is the header */
+    #corners,
+    #triangleRight,
+    #triangleGalleryLeft,
+    .triangleLeft,
+    .triangleRight {
+        display: none;
+    }
+
+    #PhoneHeaderLogo {
+        display: inline;
+        position: absolute;
+        height: 5vh;
+        width: auto;
+        align-self: left;
+        margin-top: 2vh;
+        margin-left: 2vh;
+        z-index: 1;
+    }
+
+    #Hamburgurimg {
+        display: inline;
+        position: absolute;
+        height: 5vh;
+        width: auto;
+        margin-left: 85%;
+        margin-top: 2vh;
+        margin-right: 2vh; 
+        z-index: 1;
+    }
+
+    .headerLinkPhone {
+        display: none;
+    }
+
+    #Phoneheader {
+        background-color: #c2c4bf;
+        width: 100%;
+    }
+
+    #blockPhoneHeader {
+        display: none;
+        position: absolute;
+        background-color: rgb(112, 110, 110);
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100%;
+    }
+
+    .headerLinkPhone {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 2vh;
+        transition: 2s;
+    }
+
+    .hamburger {
+        padding-top: 10vh
+    }
+
+    /* footer do not touch */
+    #footerFlex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        background-color: rgb(112, 110, 110);
+        width: auto;
+        height: 150%;
+    }
+
+    /* about us page */
+    .aboutflex,
+    .aboutflex2 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    #aboutvid1,
+    #aboutimg {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .aboutusmain {
+        height: 250vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    #textabout1 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #textabout2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* our menu phone page */
+    .menufixed {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .navgerechten {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .navgerechten2 {
+        flex-direction: column;
+    }
+
+    .menumain {
+        padding-top: 0;
+        height: 200vh;
+        padding-bottom: 460vh;
+    }
+
+    #menuBack,
+    #menuForward {
+        display: none;
+    }
+
+    .menuFlex {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: static;
+        height: 500vh;
+        opacity: 1;
+    }
+
+    .menuBlock {
+        width: 45%;
+        opacity: 1;
+    }
+
+    /* Gallery */
+    .galleryFlex {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        padding-top: 15vh;
+
+        background-color: rgb(125, 118, 118);
+    }
+
+    .galleryFlex>article>p {
+        text-align: center;
+        font-size: 2.5vh;
+        inline-size: 45vh;
+    }
+
+    .galleryFlex>article>img {
+        height: 25vh;
+        width: 45vh;
+    }
+
+    .galleryFlex {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        background-color: rgb(125, 118, 118);
+    }
+
+    /* Home */
+    #snelleHapLogo {
+        margin-top: 2.5vh;
+        margin-left: 5vh;
+        position: absolute;
+        mix-blend-mode: difference;
+        z-index: 2;
+        width: 75%;
+        height: 20%;
+    }
+
+    .homeTextFlex2 {
+        background-color: rgb(112, 110, 110);
+        z-index: 2;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .homeTextFlex2>p {
+        inline-size: auto;
+        margin: 1vh;
+    }
+
+    #slideHomepageH1 {
+        z-index: 2;
+        margin-left: 10%;
+        padding-bottom: 20%;
+        position: absolute;
+        font-size: 50px;
+    }
+
+    .slideHomepage {
+        margin-top: 40%;
+        margin-left: 10%;
+        width: 50vh;
+        position: absolute;
+    }
+
+    #Back {
+        position: absolute;
+        font-size: 2vh;
+        color: white;
+        width: 3vh;
+        height: 15vh;
+        border-radius: 25px;
+        border: 2.5px solid #ffffff;
+        background-color: rgb(112, 110, 110);
+        margin-top: 24.5vh;
+        margin-left: 0.5vh;
+        transition: 100ms;
+    }
+
+    #Forward {
+        position: absolute;
+        font-size: 2vh;
+        color: white;
+        width: 3vh;
+        height: 15vh;
+        border-radius: 25px;
+        border: 2.5px solid #ffffff;
+        background-color: rgb(112, 110, 110);
+        margin-top: 24vh;
+        margin-left: 43vh;
+        transition: 100ms;
+        z-index: 5;
+    }
+
+    .backgroundSlideShow {
+        background-color: rgb(125, 118, 118);
+        width: auto;
+        height: 50vh;
+    }
+}
+
+;
